@@ -40,15 +40,9 @@ const HeroHome = () => {
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
-                        Kiaeem
+                        Niicellc
                     </h1>
-                    <h1
-                        className="font-bebas text-5xl md:text-6xl tracking-wider mb-8 text-shadow-lg"
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                    >
-                        Crawford
-                    </h1>
+
                     <p
                         className="text-xl md:text-2xl font-light mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed"
                         data-aos="fade-up"

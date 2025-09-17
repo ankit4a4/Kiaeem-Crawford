@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="font-bebas text-3xl tracking-wider mb-4">
-              Kiaeem  Crawford
+              Niicellc
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-md">
               Premium cinematic film production company specializing in commercial, narrative,
@@ -51,7 +51,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center text-white/70 text-sm">
                 <Mail size={16} className="mr-2" />
-                niicellc@aol.com
+                info@niicellc.com
               </li>
               <li className="flex items-center text-white/70 text-sm">
                 <Phone size={16} className="mr-2" />
@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/50 text-sm">
-              © 2025 Kiaeem  Crawford. All rights reserved.
+              © 2025 Niicellc. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-white/50 hover:text-white/70 text-sm transition-colors">

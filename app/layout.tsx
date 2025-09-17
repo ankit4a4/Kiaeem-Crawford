@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Kiaeem  Crawford - Premium Film Production',
+  title: 'Niicellc - Premium Film Production',
   description: 'Premium cinematic film production company specializing in commercial, narrative, and documentary filmmaking.',
 };
 

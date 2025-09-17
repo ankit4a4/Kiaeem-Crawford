@@ -18,7 +18,7 @@ const HeroAbout = () => {
           className="font-bebas text-4xl md:text-5xl  tracking-wider mb-8 text-shadow-lg"
           data-aos="fade-up"
         >
-          ABOUT Kiaeem  Crawford
+          ABOUT Niicellc
         </h1>
         <p
           className="text-xl md:text-2xl font-light text-white/90 max-w-3xl mx-auto leading-relaxed"

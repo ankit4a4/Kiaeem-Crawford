@@ -275,7 +275,7 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                quote: "Kiaeem  Crawford transformed our brand story into a visual masterpiece. Their attention to detail and creative vision exceeded all our expectations.",
+                quote: "Niicellc transformed our brand story into a visual masterpiece. Their attention to detail and creative vision exceeded all our expectations.",
                 client: "Sarah Johnson",
                 company: "TechVision Inc."
               },

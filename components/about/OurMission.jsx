@@ -12,7 +12,7 @@ const OurMission = () => {
                             OUR MISSION
                         </h2>
                         <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                            At Kiaeem  Crawford, we believe every story deserves to be told with passion,
+                            At Niicellc, we believe every story deserves to be told with passion,
                             precision, and artistic integrity. Our mission is to create visual narratives
                             that not only captivate audiences but also drive meaningful change and inspire action.
                         </p>

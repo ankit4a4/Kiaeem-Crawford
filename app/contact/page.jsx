@@ -190,7 +190,7 @@ const ContactPage = () => {
                   <Mail className="mr-4 mt-1 flex-shrink-0" size={24} />
                   <div>
                     <h3 className="font-semibold mb-1 uppercase tracking-wide">Email</h3>
-                    <p className="text-gray-600">niicellc@aol.com</p>
+                    <p className="text-gray-600">info@niicellc.com</p>
                     <p className="text-gray-600"> </p>
                   </div>
                 </div>
@@ -268,7 +268,7 @@ const ContactPage = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Kiaeem  Crawford Location"
+            title="Niicellc Location"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
@@ -353,7 +353,7 @@ const ContactPage = () => {
               Call Now
             </a>
             <a
-              href="mailto:niicellc@aol.com"
+              href="mailto:info@niicellc.com"
               className="inline-block bg-white text-black px-8 py-3 font-semibold uppercase tracking-wide hover:bg-white/90 transition-colors duration-300"
               data-aos="fade-up"
               data-aos-delay="500"
