@@ -3,7 +3,7 @@ import { Award, Users, Camera, Heart, Target, Zap } from 'lucide-react';
 
 const OurValue = () => {
   return (
-    <section className="bg-white text-black py-24">
+    <section className="bg-white text-black md:py-24 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2

@@ -28,9 +28,6 @@ const AboutPage = () => {
       <OurTeam />
       <OurValue />
       <HomeCTA />
-
-
-
     </>
   );
 };

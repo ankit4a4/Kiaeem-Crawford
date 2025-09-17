@@ -17,7 +17,7 @@ const HeroHome = () => {
     }, []);
 
     return (
-        <section className="relative bg-white h-screen overflow-hidden">
+        <section className="relative bg-white md:h-screen py-10 pt-20 overflow-hidden">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full">
                 <video

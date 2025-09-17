@@ -4,7 +4,7 @@ import { Instagram, Timer as Vimeo, Twitter, Mail, Phone, MapPin } from 'lucide-
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
@@ -12,7 +12,7 @@ const Footer = () => {
               Kiaeem  Crawford
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-md">
-              Premium cinematic film production company specializing in commercial, narrative, 
+              Premium cinematic film production company specializing in commercial, narrative,
               and documentary filmmaking. Creating visual stories that resonate and inspire.
             </p>
             <div className="flex space-x-4">
@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-white/70 text-sm">
                 <Phone size={16} className="mr-2" />
-                   7083073201
+                7083073201
               </li>
               <li className="flex items-start text-white/70 text-sm">
                 <MapPin size={16} className="mr-2 mt-0.5" />
@@ -72,10 +72,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-white/50 hover:text-white/70 text-sm transition-colors">
-                  
+
               </Link>
               <Link href="#" className="text-white/50 hover:text-white/70 text-sm transition-colors">
-                  
+
               </Link>
             </div>
           </div>

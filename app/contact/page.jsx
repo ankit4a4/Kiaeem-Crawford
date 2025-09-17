@@ -72,7 +72,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form & Info Section */}
-      <section className="bg-white text-black py-24">
+      <section className="bg-white text-black py-10 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
@@ -275,7 +275,7 @@ const ContactPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white text-black py-24">
+      <section className="bg-white text-black py-10 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2

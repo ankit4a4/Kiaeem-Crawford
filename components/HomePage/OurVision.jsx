@@ -18,7 +18,7 @@ const OurVision = () => {
     });
   }, []);
   return (
-      <section className="bg-black py-24 relative">
+      <section className="bg-black md:py-24 py-10 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
@@ -55,7 +55,7 @@ const OurVision = () => {
               <img
                 src={img.src}
                 alt="Film Production"
-                className="w-full h-[600px] object-cover grayscale"
+                className="w-full md:h-[600px] h-[200px] object-cover grayscale"
               />
               <div className="absolute inset-0 bg-black/20"></div>
             </div>

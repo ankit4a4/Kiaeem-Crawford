@@ -20,7 +20,7 @@ const HomeCTA = () => {
 
 
     return (
-        <section className="bg-black py-24 relative overflow-hidden">
+        <section className="bg-black py-10 md:py-24 relative overflow-hidden">
             <div className="absolute inset-0 bg-grain opacity-20"></div>
             <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
                 <h2

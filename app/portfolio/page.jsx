@@ -148,7 +148,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Filter Section */}
-      <section className="bg-white text-black py-16">
+      <section className="bg-white text-black py-10 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
             {categories.map((category) => (
@@ -168,7 +168,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="bg-white text-black pb-24">
+      <section className="bg-white text-black pb-10 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="masonry-grid">
             {filteredItems.map((item, index) => (
@@ -190,15 +190,15 @@ const PortfolioPage = () => {
                     <div className="text-center text-white p-6">
                       <div className="flex justify-center space-x-4 mb-4">
                         {item.type === 'video' && (
-                          <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                          <div className="w-12 h-12 hidden  bg-white/20 rounded-full md:flex items-center justify-center hover:bg-white/30 transition-colors">
                             <Play size={24} />
                           </div>
                         )}
-                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                        <div className="w-12 h-12 bg-white/20 rounded-full hidden md:flex items-center justify-center hover:bg-white/30 transition-colors">
                           <ExternalLink size={24} />
                         </div>
                       </div>
-                      <h3 className="font-bebas text-2xl tracking-wider mb-2">{item.title}</h3>
+                      <h3 className="font-bebas text-lg md:text-2xl tracking-wider mb-2">{item.title}</h3>
                       <p className="text-sm text-white/80 uppercase tracking-wide mb-2">
                         {item.category}
                       </p>
@@ -224,7 +224,7 @@ const PortfolioPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
-              className="font-bebas text-5xl md:text-7xl mb-6 tracking-wider"
+              className="font-bebas text-3xl md:text-7xl mb-6 tracking-wider"
               data-aos="fade-up"
             >
               AWARDS & RECOGNITION
@@ -251,8 +251,8 @@ const PortfolioPage = () => {
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
               >
-                <div className="font-bebas text-3xl mb-2">{award.year}</div>
-                <h3 className="font-semibold mb-1">{award.award}</h3>
+                <div className="font-bebas text-1xl md:text-3xl mb-2">{award.year}</div>
+                <h3 className="font-semibold mb-1 text-sm">{award.award}</h3>
                 <p className="text-white/60 text-sm">{award.festival}</p>
               </div>
             ))}
@@ -261,7 +261,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Client Testimonials */}
-      <section className="bg-white text-black py-24">
+      <section className="bg-white text-black py-10 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2
@@ -305,7 +305,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-black py-24">
+      <section className="bg-black md:py-24 py-10">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2
             className="font-bebas text-5xl md:text-7xl mb-8 tracking-wider"

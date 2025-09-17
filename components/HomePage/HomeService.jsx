@@ -23,7 +23,7 @@ const HomeService = () => {
 
 
     return (
-        <section className="bg-white text-black py-24">
+        <section className="bg-white text-black py-10 md:py-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2
                     className="font-bebas text-5xl md:text-7xl mb-4 tracking-wider"

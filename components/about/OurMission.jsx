@@ -4,7 +4,7 @@ import img from "@/public/doc.jpeg"
 
 const OurMission = () => {
     return (
-        <section className="bg-white text-black py-24">
+        <section className="bg-white text-black md:py-24 py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div data-aos="fade-right">
@@ -45,7 +45,7 @@ const OurMission = () => {
                         <img
                             src={img.src}
                             alt="Our Mission"
-                            className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            className="w-full h-[200px] md:h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         />
                         <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-all duration-700"></div>
                     </div>
