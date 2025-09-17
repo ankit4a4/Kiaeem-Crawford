@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import Link from "next/link";
+import img1 from "@/public/com.jpeg"
+import img2 from "@/public/doc.jpeg"
+import img3 from "@/public/nar.webp"
 
 
 const HomeService = () => {
@@ -42,17 +45,17 @@ const HomeService = () => {
                         {
                             title: "Commercial Films",
                             description: "Brand storytelling that converts viewers into customers through powerful visual narratives.",
-                            image: "https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            image: img1.src
                         },
                         {
                             title: "Documentary Production",
                             description: "Authentic storytelling that captures real experiences and drives social impact.",
-                            image: "https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            image: img2.src
                         },
                         {
                             title: "Narrative Films",
                             description: "Cinematic storytelling that engages audiences and creates lasting emotional connections.",
-                            image: "https://images.pexels.com/photos/918281/pexels-photo-918281.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            image: img3.src
                         }
                     ].map((service, index) => (
                         <div

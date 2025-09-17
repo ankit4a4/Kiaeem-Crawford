@@ -3,6 +3,16 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Play, ExternalLink, Filter } from 'lucide-react';
 import AOSInit from '@/components/AOSInit';
+import img1 from "@/public/port1.webp"
+import img2 from "@/public/port2.jpeg"
+import img3 from "@/public/port3.jpeg"
+import img4 from "@/public/port4.webp"
+import img5 from "@/public/port5.jpeg"
+import img6 from "@/public/port6.webp"
+import img7 from "@/public/port7.webp"
+import img8 from "@/public/port8.webp"
+import img9 from "@/public/port9.jpeg"
+import hero from "@/public/outvision.webp"
 
 const PortfolioPage = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -24,7 +34,7 @@ const PortfolioPage = () => {
       title: "Luxury Brand Campaign",
       category: "commercial",
       type: "video",
-      image: "https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img1.src,
       description: "Premium automotive commercial showcasing elegance and performance."
     },
     {
@@ -32,7 +42,7 @@ const PortfolioPage = () => {
       title: "Tech Startup Story",
       category: "documentary",
       type: "video",
-      image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img2.src,
       description: "Documentary following a startup's journey from garage to IPO."
     },
     {
@@ -40,7 +50,7 @@ const PortfolioPage = () => {
       title: "Fashion Forward",
       category: "commercial",
       type: "image",
-      image: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img3.src,
       description: "High-fashion photography and video campaign."
     },
     {
@@ -48,7 +58,7 @@ const PortfolioPage = () => {
       title: "Ocean's Call",
       category: "narrative",
       type: "video",
-      image: "https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img4.src,
       description: "Award-winning short film about environmental conservation."
     },
     {
@@ -56,7 +66,7 @@ const PortfolioPage = () => {
       title: "Corporate Vision",
       category: "commercial",
       type: "image",
-      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img5.src,
       description: "Corporate identity and brand story visualization."
     },
     {
@@ -64,7 +74,7 @@ const PortfolioPage = () => {
       title: "Urban Stories",
       category: "documentary",
       type: "video",
-      image: "https://images.pexels.com/photos/918281/pexels-photo-918281.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img6.src,
       description: "Street photography and urban documentary project."
     },
     {
@@ -72,7 +82,7 @@ const PortfolioPage = () => {
       title: "The Last Dance",
       category: "narrative",
       type: "video",
-      image: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img7.src,
       description: "Emotional narrative about passion and dedication."
     },
     {
@@ -80,7 +90,7 @@ const PortfolioPage = () => {
       title: "Innovation Labs",
       category: "commercial",
       type: "image",
-      image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img8.src,
       description: "Technology showcase and product demonstration."
     },
     {
@@ -88,7 +98,7 @@ const PortfolioPage = () => {
       title: "Cultural Heritage",
       category: "documentary",
       type: "video",
-      image: "https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: img9.src,
       description: "Documentary preserving traditional craftsmanship."
     }
   ];
@@ -100,38 +110,38 @@ const PortfolioPage = () => {
     { value: 'narrative', label: 'Narrative' }
   ];
 
-  const filteredItems = activeFilter === 'all' 
-    ? portfolioItems 
+  const filteredItems = activeFilter === 'all'
+    ? portfolioItems
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
     <>
       <AOSInit />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-screen bg-black flex items-center justify-center pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src={hero.src}
             alt="Portfolio"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
-        
+
         <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 
+          <h1
             className="font-bebas text-6xl md:text-8xl lg:text-9xl tracking-wider mb-8 text-shadow-lg"
             data-aos="fade-up"
           >
             OUR PORTFOLIO
           </h1>
-          <p 
+          <p
             className="text-xl md:text-2xl font-light text-white/90 max-w-3xl mx-auto leading-relaxed"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            A showcase of our finest work spanning commercials, documentaries, 
+            A showcase of our finest work spanning commercials, documentaries,
             and narrative films that have moved audiences worldwide.
           </p>
         </div>
@@ -145,11 +155,10 @@ const PortfolioPage = () => {
               <button
                 key={category.value}
                 onClick={() => setActiveFilter(category.value)}
-                className={`px-8 py-3 font-semibold uppercase tracking-wide transition-all duration-300 ${
-                  activeFilter === category.value
-                    ? 'bg-black text-white'
-                    : 'border-2 border-black text-black hover:bg-black hover:text-white'
-                }`}
+                className={`px-8 py-3 font-semibold uppercase tracking-wide transition-all duration-300 ${activeFilter === category.value
+                  ? 'bg-black text-white'
+                  : 'border-2 border-black text-black hover:bg-black hover:text-white'
+                  }`}
               >
                 {category.label}
               </button>
@@ -163,7 +172,7 @@ const PortfolioPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="masonry-grid">
             {filteredItems.map((item, index) => (
-              <div 
+              <div
                 key={item.id}
                 className="masonry-item group cursor-pointer"
                 data-aos="fade-up"
@@ -175,7 +184,7 @@ const PortfolioPage = () => {
                     alt={item.title}
                     className="w-full h-auto object-cover grayscale-hover transform group-hover:scale-110 transition-all duration-700"
                   />
-                  
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                     <div className="text-center text-white p-6">
@@ -196,7 +205,7 @@ const PortfolioPage = () => {
                       <p className="text-sm text-white/70">{item.description}</p>
                     </div>
                   </div>
-                  
+
                   {/* Video Indicator */}
                   {item.type === 'video' && (
                     <div className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
@@ -214,13 +223,13 @@ const PortfolioPage = () => {
       <section className="bg-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 
+            <h2
               className="font-bebas text-5xl md:text-7xl mb-6 tracking-wider"
               data-aos="fade-up"
             >
               AWARDS & RECOGNITION
             </h2>
-            <p 
+            <p
               className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -236,7 +245,7 @@ const PortfolioPage = () => {
               { year: "2023", award: "People's Choice", festival: "Sundance" },
               { year: "2022", award: "Best Documentary", festival: "Toronto Film Festival" }
             ].map((award, index) => (
-              <div 
+              <div
                 key={index}
                 className="text-center border border-white/20 p-6 hover:border-white/40 transition-colors duration-300"
                 data-aos="fade-up"
@@ -255,7 +264,7 @@ const PortfolioPage = () => {
       <section className="bg-white text-black py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 
+            <h2
               className="font-bebas text-5xl md:text-7xl mb-6 tracking-wider"
               data-aos="fade-up"
             >
@@ -276,7 +285,7 @@ const PortfolioPage = () => {
                 company: "Impact Foundation"
               }
             ].map((testimonial, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-gray-50 p-8 text-center"
                 data-aos="fade-up"
@@ -298,18 +307,18 @@ const PortfolioPage = () => {
       {/* CTA Section */}
       <section className="bg-black py-24">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 
+          <h2
             className="font-bebas text-5xl md:text-7xl mb-8 tracking-wider"
             data-aos="fade-up"
           >
             INSPIRED BY OUR WORK?
           </h2>
-          <p 
+          <p
             className="text-xl text-white/80 mb-12 leading-relaxed max-w-2xl mx-auto"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Let's create something extraordinary together. Every great project starts 
+            Let's create something extraordinary together. Every great project starts
             with a conversation about your vision and goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

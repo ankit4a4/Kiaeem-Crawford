@@ -5,16 +5,16 @@ import { Play } from "lucide-react";
 import Link from "next/link";
 
 const HeroHome = () => {
-  useEffect(() => {
-    import('aos').then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        easing: 'ease-out-cubic',
-        once: true,
-        offset: 100,
-      });
-    });
-  }, []);
+    useEffect(() => {
+        import('aos').then((AOS) => {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 100,
+            });
+        });
+    }, []);
 
     return (
         <section className="relative bg-white h-screen overflow-hidden">
@@ -29,7 +29,7 @@ const HeroHome = () => {
                 >
                     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 video-overlay bg-black"></div>
+                <div className="absolute inset-0 video-overlay video-overlay "></div>
             </div>
 
             {/* Hero Content */}

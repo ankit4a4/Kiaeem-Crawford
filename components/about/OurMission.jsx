@@ -1,5 +1,6 @@
 import { Heart, Target, Zap } from 'lucide-react'
 import React from 'react'
+import img from "@/public/doc.jpeg"
 
 const OurMission = () => {
     return (
@@ -42,7 +43,7 @@ const OurMission = () => {
 
                     <div className="relative" data-aos="fade-left">
                         <img
-                            src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src={img.src}
                             alt="Our Mission"
                             className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         />

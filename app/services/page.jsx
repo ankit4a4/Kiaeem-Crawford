@@ -13,6 +13,10 @@ import {
   ArrowRight
 } from 'lucide-react';
 import AOSInit from '@/components/AOSInit';
+import img1 from "@/public/com.jpeg"
+import img2 from "@/public/doc.jpeg"
+import img3 from "@/public/nar.webp"
+import hero from "@/public/outvision.webp"
 
 const ServicesPage = () => {
   useEffect(() => {
@@ -31,21 +35,21 @@ const ServicesPage = () => {
       title: "Commercial Production",
       description: "Brand storytelling that converts viewers into customers through powerful visual narratives that resonate with your target audience.",
       features: ["Brand Films", "TV Commercials", "Online Campaigns", "Product Launches"],
-      image: "https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: img1.src,
       icon: Film
     },
     {
       title: "Documentary Filmmaking",
       description: "Authentic storytelling that captures real experiences and drives social impact through compelling documentary narratives.",
       features: ["Corporate Documentaries", "Social Impact Films", "Historical Archives", "Personal Stories"],
-      image: "https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: img2.src,
       icon: Camera
     },
     {
       title: "Narrative Films",
       description: "Cinematic storytelling that engages audiences and creates lasting emotional connections through carefully crafted narratives.",
       features: ["Short Films", "Feature Films", "Series Pilots", "Music Videos"],
-      image: "https://images.pexels.com/photos/918281/pexels-photo-918281.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: img3.src,
       icon: Edit
     }
   ];
@@ -85,7 +89,7 @@ const ServicesPage = () => {
       <section className="relative min-h-screen bg-black flex items-center justify-center pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src={hero.src}
             alt="Services"
             className="w-full h-full object-cover opacity-20"
           />

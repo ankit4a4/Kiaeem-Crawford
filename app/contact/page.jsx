@@ -199,7 +199,7 @@ const ContactPage = () => {
                   <Phone className="mr-4 mt-1 flex-shrink-0" size={24} />
                   <div>
                     <h3 className="font-semibold mb-1 uppercase tracking-wide">Phone</h3>
-                    <p className="text-gray-600">+91 7083073201</p>
+                    <p className="text-gray-600">   7083073201</p>
                     <p className="text-gray-600"> </p>
                   </div>
                 </div>

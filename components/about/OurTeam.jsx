@@ -1,4 +1,7 @@
 import React from 'react'
+import img1 from "@/public/t1.jpeg"
+import img2 from "@/public/t2.webp"
+import img3 from "@/public/t3.webp"
 
 const OurTeam = () => {
 
@@ -6,19 +9,19 @@ const OurTeam = () => {
     {
       name: "Marcus Chen",
       role: "Creative Director",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: img1.src,
       bio: "Award-winning director with 12+ years in commercial and narrative filmmaking."
     },
     {
       name: "Sofia Rodriguez",
       role: "Lead Cinematographer",
-      image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: img2.src,
       bio: "Master of visual storytelling with expertise in cutting-edge camera technology."
     },
     {
       name: "James Wilson",
       role: "Post-Production Supervisor",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: img3.src,
       bio: "Technical wizard who transforms raw footage into cinematic masterpieces."
     }
   ];

@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-white/70 text-sm">
                 <Phone size={16} className="mr-2" />
-                +91 7083073201
+                   7083073201
               </li>
               <li className="flex items-start text-white/70 text-sm">
                 <MapPin size={16} className="mr-2 mt-0.5" />
@@ -72,10 +72,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-white/50 hover:text-white/70 text-sm transition-colors">
-                Privacy Policy
+                  
               </Link>
               <Link href="#" className="text-white/50 hover:text-white/70 text-sm transition-colors">
-                Terms of Service
+                  
               </Link>
             </div>
           </div>

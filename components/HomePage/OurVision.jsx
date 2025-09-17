@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { Award, Camera, Users } from 'lucide-react'
 import React from 'react'
 import Link from 'next/link'
+import img from "@/public/outvision.webp"
 
 const OurVision = () => {
 
@@ -52,7 +53,7 @@ const OurVision = () => {
             </div>
             <div className="relative" data-aos="fade-left">
               <img
-                src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={img.src}
                 alt="Film Production"
                 className="w-full h-[600px] object-cover grayscale"
               />
